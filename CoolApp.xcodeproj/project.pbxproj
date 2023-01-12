@@ -13,6 +13,9 @@
 		2B5032EA296FE14000C5095A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2B5032E8296FE14000C5095A /* Main.storyboard */; };
 		2B5032EC296FE14200C5095A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2B5032EB296FE14200C5095A /* Assets.xcassets */; };
 		2B5032EF296FE14200C5095A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2B5032ED296FE14200C5095A /* LaunchScreen.storyboard */; };
+		2B5032F9296FE63D00C5095A /* SomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B5032F8296FE63D00C5095A /* SomeViewController.m */; };
+		2B5033122970339E00C5095A /* app in Resources */ = {isa = PBXBuildFile; fileRef = 2B5033112970339E00C5095A /* app */; };
+		4B61642D04BD2F5CEA631F28 /* Pods_CoolApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B3D8B716FBFF9FB40970D3D /* Pods_CoolApp.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +27,13 @@
 		2B5032EB296FE14200C5095A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2B5032EE296FE14200C5095A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2B5032F0296FE14200C5095A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2B5032F6296FE63D00C5095A /* CoolApp-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CoolApp-Bridging-Header.h"; sourceTree = "<group>"; };
+		2B5032F7296FE63D00C5095A /* SomeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SomeViewController.h; sourceTree = "<group>"; };
+		2B5032F8296FE63D00C5095A /* SomeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SomeViewController.m; sourceTree = "<group>"; };
+		2B5033112970339E00C5095A /* app */ = {isa = PBXFileReference; lastKnownFileType = folder; path = app; sourceTree = "<group>"; };
+		3B3D8B716FBFF9FB40970D3D /* Pods_CoolApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CoolApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BCD91EBC52690A418293A29B /* Pods-CoolApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CoolApp.release.xcconfig"; path = "Target Support Files/Pods-CoolApp/Pods-CoolApp.release.xcconfig"; sourceTree = "<group>"; };
+		DD1934B2E700DEEA1FCF47AD /* Pods-CoolApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CoolApp.debug.xcconfig"; path = "Target Support Files/Pods-CoolApp/Pods-CoolApp.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +41,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4B61642D04BD2F5CEA631F28 /* Pods_CoolApp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +53,8 @@
 			children = (
 				2B5032E1296FE14000C5095A /* CoolApp */,
 				2B5032E0296FE14000C5095A /* Products */,
+				F3A73EC1B7B3B559A37658E7 /* Pods */,
+				8A9B57F9E14DE8643F30F0BD /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,15 +69,36 @@
 		2B5032E1296FE14000C5095A /* CoolApp */ = {
 			isa = PBXGroup;
 			children = (
+				2B5033112970339E00C5095A /* app */,
 				2B5032E2296FE14000C5095A /* AppDelegate.swift */,
+				2B5032F7296FE63D00C5095A /* SomeViewController.h */,
+				2B5032F8296FE63D00C5095A /* SomeViewController.m */,
 				2B5032E4296FE14000C5095A /* SceneDelegate.swift */,
 				2B5032E6296FE14000C5095A /* ViewController.swift */,
 				2B5032E8296FE14000C5095A /* Main.storyboard */,
 				2B5032EB296FE14200C5095A /* Assets.xcassets */,
 				2B5032ED296FE14200C5095A /* LaunchScreen.storyboard */,
 				2B5032F0296FE14200C5095A /* Info.plist */,
+				2B5032F6296FE63D00C5095A /* CoolApp-Bridging-Header.h */,
 			);
 			path = CoolApp;
+			sourceTree = "<group>";
+		};
+		8A9B57F9E14DE8643F30F0BD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3B3D8B716FBFF9FB40970D3D /* Pods_CoolApp.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F3A73EC1B7B3B559A37658E7 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				DD1934B2E700DEEA1FCF47AD /* Pods-CoolApp.debug.xcconfig */,
+				BCD91EBC52690A418293A29B /* Pods-CoolApp.release.xcconfig */,
+			);
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +108,14 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2B5032F3296FE14200C5095A /* Build configuration list for PBXNativeTarget "CoolApp" */;
 			buildPhases = (
+				F7AAB2D80C3770F0CF69347D /* [CP] Check Pods Manifest.lock */,
+				30FF6C6088E32EE45DC7C8DD /* NativeScript PreBuild */,
 				2B5032DB296FE14000C5095A /* Sources */,
+				98A20B2AA68CBD8A8A006D1B /* NativeScript PreLink */,
 				2B5032DC296FE14000C5095A /* Frameworks */,
 				2B5032DD296FE14000C5095A /* Resources */,
+				A3FC22BC0CE8237093A72E54 /* [CP] Embed Pods Frameworks */,
+				A683D449CEEFB3B6D06722D9 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -99,6 +138,7 @@
 				TargetAttributes = {
 					2B5032DE296FE14000C5095A = {
 						CreatedOnToolsVersion = 14.1;
+						LastSwiftMigration = 1410;
 					};
 				};
 			};
@@ -125,6 +165,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2B5033122970339E00C5095A /* app in Resources */,
 				2B5032EF296FE14200C5095A /* LaunchScreen.storyboard in Resources */,
 				2B5032EC296FE14200C5095A /* Assets.xcassets in Resources */,
 				2B5032EA296FE14000C5095A /* Main.storyboard in Resources */,
@@ -133,6 +174,101 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		30FF6C6088E32EE45DC7C8DD /* NativeScript PreBuild */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "NativeScript PreBuild";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "${SRCROOT}/internal/nativescript-pre-build\necho \"RUNNNN\"\n";
+		};
+		98A20B2AA68CBD8A8A006D1B /* NativeScript PreLink */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "NativeScript PreLink";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "${SRCROOT}/internal/nativescript-pre-link\n";
+		};
+		A3FC22BC0CE8237093A72E54 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CoolApp/Pods-CoolApp-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CoolApp/Pods-CoolApp-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-CoolApp/Pods-CoolApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A683D449CEEFB3B6D06722D9 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CoolApp/Pods-CoolApp-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CoolApp/Pods-CoolApp-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-CoolApp/Pods-CoolApp-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F7AAB2D80C3770F0CF69347D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CoolApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		2B5032DB296FE14000C5095A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -140,6 +276,7 @@
 			files = (
 				2B5032E7296FE14000C5095A /* ViewController.swift in Sources */,
 				2B5032E3296FE14000C5095A /* AppDelegate.swift in Sources */,
+				2B5032F9296FE63D00C5095A /* SomeViewController.m in Sources */,
 				2B5032E5296FE14000C5095A /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -173,7 +310,7 @@
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
-				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_MODULES = NO;
 				CLANG_ENABLE_OBJC_ARC = YES;
 				CLANG_ENABLE_OBJC_WEAK = YES;
 				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
@@ -200,6 +337,7 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_BITCODE = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
@@ -217,9 +355,36 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				LD = $SRCROOT/internal/nsld.sh;
+				LDPLUSPLUS = $SRCROOT/internal/nsld.sh;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-framework",
+					"WebKit$(inherited)",
+					"-ObjC",
+					"-sectcreate",
+					__DATA,
+					__TNSMetadata,
+					"$(CONFIGURATION_BUILD_DIR)/metadata-$(CURRENT_ARCH).bin",
+					"-F",
+					"$(SRCROOT)/internal",
+					"-licucore",
+					"-lz",
+					"-lc++",
+					"-framework",
+					Foundation,
+					"-framework",
+					UIKit,
+					"-framework",
+					CoreGraphics,
+					"-framework",
+					MobileCoreServices,
+					"-framework",
+					Security,
+				);
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -233,7 +398,7 @@
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
-				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_MODULES = NO;
 				CLANG_ENABLE_OBJC_ARC = YES;
 				CLANG_ENABLE_OBJC_WEAK = YES;
 				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
@@ -260,6 +425,7 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_BITCODE = NO;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
@@ -271,8 +437,35 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				LD = $SRCROOT/internal/nsld.sh;
+				LDPLUSPLUS = $SRCROOT/internal/nsld.sh;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-framework",
+					"WebKit$(inherited)",
+					"-ObjC",
+					"-sectcreate",
+					__DATA,
+					__TNSMetadata,
+					"$(CONFIGURATION_BUILD_DIR)/metadata-$(CURRENT_ARCH).bin",
+					"-F",
+					"$(SRCROOT)/internal",
+					"-licucore",
+					"-lz",
+					"-lc++",
+					"-framework",
+					Foundation,
+					"-framework",
+					UIKit,
+					"-framework",
+					CoreGraphics,
+					"-framework",
+					MobileCoreServices,
+					"-framework",
+					Security,
+				);
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
@@ -282,12 +475,18 @@
 		};
 		2B5032F4296FE14200C5095A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DD1934B2E700DEEA1FCF47AD /* Pods-CoolApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = H6KAAZFWNY;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = CoolApp/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -303,6 +502,8 @@
 				PRODUCT_BUNDLE_IDENTIFIER = tdermendjiev.CoolApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "CoolApp/CoolApp-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -310,12 +511,18 @@
 		};
 		2B5032F5296FE14200C5095A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BCD91EBC52690A418293A29B /* Pods-CoolApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = H6KAAZFWNY;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = CoolApp/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -331,6 +538,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = tdermendjiev.CoolApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "CoolApp/CoolApp-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

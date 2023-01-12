@@ -1,0 +1,20 @@
+PODS:
+  - NativeScript (8.3.4)
+  - NativeScriptUI (0.1.1)
+
+DEPENDENCIES:
+  - NativeScript (= 8.3.4)
+  - NativeScriptUI
+
+SPEC REPOS:
+  trunk:
+    - NativeScript
+    - NativeScriptUI
+
+SPEC CHECKSUMS:
+  NativeScript: 60baa0ae02dd639bd512608bd456c4991699c9fc
+  NativeScriptUI: f825b88da6cd04f435f18f1eeda67a0c4e5a822c
+
+PODFILE CHECKSUM: a0d17cc5369933eced1ad6afe80a1789f6b21fe3
+
+COCOAPODS: 1.11.3
