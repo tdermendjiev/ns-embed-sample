@@ -7,12 +7,26 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, NativeScriptEmbedderDelegate {
+    @objc func presentNativeScriptApp(_ vc: UIViewController!) -> Any! {
+//        [self addChildViewController:vc];
+//            [vc.view setFrame:_containerView.bounds];
+//            [_containerView addSubview:vc.view];
+//            [vc didMoveToParentViewController:self];
+//            return 0;
+        
+        self.addChild(vc)
+        vc.view.frame = self.view.bounds
+        vc.didMove(toParent: self)
+        return 0
+    }
+    
     
     
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        NativeScriptEmbedder.sharedInstance()?.setDelegate(self)
         // Do any additional setup after loading the view.
     }
     
@@ -38,7 +52,7 @@ class ViewController: UIViewController {
         let ns = NativeScript(config: config)
 //        ns?.runMainApplication()
         
-        ns?.run("console.log(NSString.alloc().initWithString('HELLO FROM NATIVESCRIPT'))", runLoop: false)
+        ns?.run("console.log(NativeScriptEmbedder.sharedInstance().delegate)", runLoop: false)
     }
 
 

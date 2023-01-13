@@ -5,7 +5,7 @@ platform :ios, '15.0'
 
 target 'CoolApp' do
     use_frameworks!
-    pod 'NativeScript', '8.3.4'
+    pod 'NativeScript', :git => 'https://github.com/NativeScript/ios-v8-pod.git', :branch => 'worker'
     pod 'NativeScriptUI'
 end
 

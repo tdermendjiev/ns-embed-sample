@@ -1,20 +1,29 @@
 PODS:
-  - NativeScript (8.3.4)
+  - NativeScript (8.3.5)
   - NativeScriptUI (0.1.1)
 
 DEPENDENCIES:
-  - NativeScript (= 8.3.4)
+  - NativeScript (from `https://github.com/NativeScript/ios-v8-pod.git`, branch `worker`)
   - NativeScriptUI
 
 SPEC REPOS:
   trunk:
-    - NativeScript
     - NativeScriptUI
 
+EXTERNAL SOURCES:
+  NativeScript:
+    :branch: worker
+    :git: https://github.com/NativeScript/ios-v8-pod.git
+
+CHECKOUT OPTIONS:
+  NativeScript:
+    :commit: e4ae944d7a8da5b877a7178cc4ee8192b02ddc3f
+    :git: https://github.com/NativeScript/ios-v8-pod.git
+
 SPEC CHECKSUMS:
-  NativeScript: 60baa0ae02dd639bd512608bd456c4991699c9fc
+  NativeScript: dae4a937c6578469759d53a428cdd4c4a3157ece
   NativeScriptUI: f825b88da6cd04f435f18f1eeda67a0c4e5a822c
 
-PODFILE CHECKSUM: a0d17cc5369933eced1ad6afe80a1789f6b21fe3
+PODFILE CHECKSUM: 9f8c40a91cafc35aae92e004b0bd53df63d34598
 
 COCOAPODS: 1.11.3

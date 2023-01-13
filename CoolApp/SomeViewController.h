@@ -6,10 +6,11 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "NativeScriptEmbedder.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface SomeViewController : UIViewController
+@interface SomeViewController : UIViewController <NativeScriptEmbedderDelegate>
 
 @end
 

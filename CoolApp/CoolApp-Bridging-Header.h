@@ -5,3 +5,4 @@
 
 #import "NativeScript/NativeScript.h"
 #import "SomeViewController.h"
+#import "NativeScriptEmbedder.h"

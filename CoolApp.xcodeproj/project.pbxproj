@@ -14,11 +14,16 @@
 		2B5032EC296FE14200C5095A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2B5032EB296FE14200C5095A /* Assets.xcassets */; };
 		2B5032EF296FE14200C5095A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2B5032ED296FE14200C5095A /* LaunchScreen.storyboard */; };
 		2B5032F9296FE63D00C5095A /* SomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B5032F8296FE63D00C5095A /* SomeViewController.m */; };
-		2B5033122970339E00C5095A /* app in Resources */ = {isa = PBXBuildFile; fileRef = 2B5033112970339E00C5095A /* app */; };
-		4B61642D04BD2F5CEA631F28 /* Pods_CoolApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B3D8B716FBFF9FB40970D3D /* Pods_CoolApp.framework */; };
+		2B5033262971B9B500C5095A /* app in Resources */ = {isa = PBXBuildFile; fileRef = 2B5033252971B9B500C5095A /* app */; };
+		2B50359D2971DCCE00C5095A /* NativeScriptEmbedder.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B5035992971DCCE00C5095A /* NativeScriptEmbedder.m */; };
+		2B50359E2971DCCE00C5095A /* NativeScriptUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B50359A2971DCCE00C5095A /* NativeScriptUtils.m */; };
+		2B50359F2971DCCE00C5095A /* UIView+NativeScript.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B50359B2971DCCE00C5095A /* UIView+NativeScript.m */; };
+		A7654A9F1971C35F5BEDA1A2 /* Pods_CoolApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 838E138F5EAA4DD90EA84CEC /* Pods_CoolApp.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0BFE4DB30736D5D4C76A559A /* Pods-CoolApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CoolApp.debug.xcconfig"; path = "Target Support Files/Pods-CoolApp/Pods-CoolApp.debug.xcconfig"; sourceTree = "<group>"; };
+		272307FC04C0F1ACC32BB687 /* Pods-CoolApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CoolApp.release.xcconfig"; path = "Target Support Files/Pods-CoolApp/Pods-CoolApp.release.xcconfig"; sourceTree = "<group>"; };
 		2B5032DF296FE14000C5095A /* CoolApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoolApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2B5032E2296FE14000C5095A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2B5032E4296FE14000C5095A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -30,10 +35,14 @@
 		2B5032F6296FE63D00C5095A /* CoolApp-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CoolApp-Bridging-Header.h"; sourceTree = "<group>"; };
 		2B5032F7296FE63D00C5095A /* SomeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SomeViewController.h; sourceTree = "<group>"; };
 		2B5032F8296FE63D00C5095A /* SomeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SomeViewController.m; sourceTree = "<group>"; };
-		2B5033112970339E00C5095A /* app */ = {isa = PBXFileReference; lastKnownFileType = folder; path = app; sourceTree = "<group>"; };
-		3B3D8B716FBFF9FB40970D3D /* Pods_CoolApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CoolApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		BCD91EBC52690A418293A29B /* Pods-CoolApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CoolApp.release.xcconfig"; path = "Target Support Files/Pods-CoolApp/Pods-CoolApp.release.xcconfig"; sourceTree = "<group>"; };
-		DD1934B2E700DEEA1FCF47AD /* Pods-CoolApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CoolApp.debug.xcconfig"; path = "Target Support Files/Pods-CoolApp/Pods-CoolApp.debug.xcconfig"; sourceTree = "<group>"; };
+		2B5033252971B9B500C5095A /* app */ = {isa = PBXFileReference; lastKnownFileType = folder; path = app; sourceTree = "<group>"; };
+		2B5035972971DCCD00C5095A /* NativeScriptEmbedder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NativeScriptEmbedder.h; sourceTree = "<group>"; };
+		2B5035982971DCCD00C5095A /* NativeScriptUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NativeScriptUtils.h; sourceTree = "<group>"; };
+		2B5035992971DCCE00C5095A /* NativeScriptEmbedder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NativeScriptEmbedder.m; sourceTree = "<group>"; };
+		2B50359A2971DCCE00C5095A /* NativeScriptUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NativeScriptUtils.m; sourceTree = "<group>"; };
+		2B50359B2971DCCE00C5095A /* UIView+NativeScript.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+NativeScript.m"; sourceTree = "<group>"; };
+		2B50359C2971DCCE00C5095A /* UIView+NativeScript.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+NativeScript.h"; sourceTree = "<group>"; };
+		838E138F5EAA4DD90EA84CEC /* Pods_CoolApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CoolApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -41,7 +50,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4B61642D04BD2F5CEA631F28 /* Pods_CoolApp.framework in Frameworks */,
+				A7654A9F1971C35F5BEDA1A2 /* Pods_CoolApp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -54,7 +63,7 @@
 				2B5032E1296FE14000C5095A /* CoolApp */,
 				2B5032E0296FE14000C5095A /* Products */,
 				F3A73EC1B7B3B559A37658E7 /* Pods */,
-				8A9B57F9E14DE8643F30F0BD /* Frameworks */,
+				39252D71F8F0F0B2FD2D5FD5 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -69,7 +78,8 @@
 		2B5032E1296FE14000C5095A /* CoolApp */ = {
 			isa = PBXGroup;
 			children = (
-				2B5033112970339E00C5095A /* app */,
+				2B5035962971DCBC00C5095A /* NSFiles */,
+				2B5033252971B9B500C5095A /* app */,
 				2B5032E2296FE14000C5095A /* AppDelegate.swift */,
 				2B5032F7296FE63D00C5095A /* SomeViewController.h */,
 				2B5032F8296FE63D00C5095A /* SomeViewController.m */,
@@ -84,10 +94,23 @@
 			path = CoolApp;
 			sourceTree = "<group>";
 		};
-		8A9B57F9E14DE8643F30F0BD /* Frameworks */ = {
+		2B5035962971DCBC00C5095A /* NSFiles */ = {
 			isa = PBXGroup;
 			children = (
-				3B3D8B716FBFF9FB40970D3D /* Pods_CoolApp.framework */,
+				2B5035972971DCCD00C5095A /* NativeScriptEmbedder.h */,
+				2B5035992971DCCE00C5095A /* NativeScriptEmbedder.m */,
+				2B5035982971DCCD00C5095A /* NativeScriptUtils.h */,
+				2B50359A2971DCCE00C5095A /* NativeScriptUtils.m */,
+				2B50359C2971DCCE00C5095A /* UIView+NativeScript.h */,
+				2B50359B2971DCCE00C5095A /* UIView+NativeScript.m */,
+			);
+			path = NSFiles;
+			sourceTree = "<group>";
+		};
+		39252D71F8F0F0B2FD2D5FD5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				838E138F5EAA4DD90EA84CEC /* Pods_CoolApp.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -95,8 +118,8 @@
 		F3A73EC1B7B3B559A37658E7 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				DD1934B2E700DEEA1FCF47AD /* Pods-CoolApp.debug.xcconfig */,
-				BCD91EBC52690A418293A29B /* Pods-CoolApp.release.xcconfig */,
+				0BFE4DB30736D5D4C76A559A /* Pods-CoolApp.debug.xcconfig */,
+				272307FC04C0F1ACC32BB687 /* Pods-CoolApp.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -108,14 +131,14 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2B5032F3296FE14200C5095A /* Build configuration list for PBXNativeTarget "CoolApp" */;
 			buildPhases = (
-				F7AAB2D80C3770F0CF69347D /* [CP] Check Pods Manifest.lock */,
-				30FF6C6088E32EE45DC7C8DD /* NativeScript PreBuild */,
+				F854764A419F30383E7EC7DB /* [CP] Check Pods Manifest.lock */,
+				5F264EAEB64544F9B93A6A47 /* NativeScript PreBuild */,
 				2B5032DB296FE14000C5095A /* Sources */,
-				98A20B2AA68CBD8A8A006D1B /* NativeScript PreLink */,
+				BCF7A3080AD5998790A19D73 /* NativeScript PreLink */,
 				2B5032DC296FE14000C5095A /* Frameworks */,
 				2B5032DD296FE14000C5095A /* Resources */,
-				A3FC22BC0CE8237093A72E54 /* [CP] Embed Pods Frameworks */,
-				A683D449CEEFB3B6D06722D9 /* [CP] Copy Pods Resources */,
+				86CFDDD1F45C4203F5BEA17F /* [CP] Embed Pods Frameworks */,
+				946BCDA1F6F2E815B7B05249 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -165,7 +188,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2B5033122970339E00C5095A /* app in Resources */,
+				2B5033262971B9B500C5095A /* app in Resources */,
 				2B5032EF296FE14200C5095A /* LaunchScreen.storyboard in Resources */,
 				2B5032EC296FE14200C5095A /* Assets.xcassets in Resources */,
 				2B5032EA296FE14000C5095A /* Main.storyboard in Resources */,
@@ -175,7 +198,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		30FF6C6088E32EE45DC7C8DD /* NativeScript PreBuild */ = {
+		5F264EAEB64544F9B93A6A47 /* NativeScript PreBuild */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -191,27 +214,9 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "${SRCROOT}/internal/nativescript-pre-build\necho \"RUNNNN\"\n";
+			shellScript = "${SRCROOT}/internal/nativescript-pre-build";
 		};
-		98A20B2AA68CBD8A8A006D1B /* NativeScript PreLink */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-			);
-			name = "NativeScript PreLink";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "${SRCROOT}/internal/nativescript-pre-link\n";
-		};
-		A3FC22BC0CE8237093A72E54 /* [CP] Embed Pods Frameworks */ = {
+		86CFDDD1F45C4203F5BEA17F /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -228,7 +233,7 @@
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-CoolApp/Pods-CoolApp-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		A683D449CEEFB3B6D06722D9 /* [CP] Copy Pods Resources */ = {
+		946BCDA1F6F2E815B7B05249 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -245,7 +250,25 @@
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-CoolApp/Pods-CoolApp-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		F7AAB2D80C3770F0CF69347D /* [CP] Check Pods Manifest.lock */ = {
+		BCF7A3080AD5998790A19D73 /* NativeScript PreLink */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "NativeScript PreLink";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "${SRCROOT}/internal/nativescript-pre-link";
+		};
+		F854764A419F30383E7EC7DB /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -275,7 +298,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				2B5032E7296FE14000C5095A /* ViewController.swift in Sources */,
+				2B50359E2971DCCE00C5095A /* NativeScriptUtils.m in Sources */,
+				2B50359F2971DCCE00C5095A /* UIView+NativeScript.m in Sources */,
 				2B5032E3296FE14000C5095A /* AppDelegate.swift in Sources */,
+				2B50359D2971DCCE00C5095A /* NativeScriptEmbedder.m in Sources */,
 				2B5032F9296FE63D00C5095A /* SomeViewController.m in Sources */,
 				2B5032E5296FE14000C5095A /* SceneDelegate.swift in Sources */,
 			);
@@ -355,8 +381,8 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
-				LD = $SRCROOT/internal/nsld.sh;
-				LDPLUSPLUS = $SRCROOT/internal/nsld.sh;
+				LD = "$SRCROOT/internal/nsld.sh";
+				LDPLUSPLUS = "$SRCROOT/internal/nsld.sh";
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -437,8 +463,8 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
-				LD = $SRCROOT/internal/nsld.sh;
-				LDPLUSPLUS = $SRCROOT/internal/nsld.sh;
+				LD = "$SRCROOT/internal/nsld.sh";
+				LDPLUSPLUS = "$SRCROOT/internal/nsld.sh";
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				OTHER_LDFLAGS = (
@@ -475,10 +501,11 @@
 		};
 		2B5032F4296FE14200C5095A /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = DD1934B2E700DEEA1FCF47AD /* Pods-CoolApp.debug.xcconfig */;
+			baseConfigurationReference = 0BFE4DB30736D5D4C76A559A /* Pods-CoolApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
@@ -486,7 +513,9 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/CoolApp/ios/build/Debug-iphonesimulator",
 				);
+				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = CoolApp/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -511,10 +540,11 @@
 		};
 		2B5032F5296FE14200C5095A /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = BCD91EBC52690A418293A29B /* Pods-CoolApp.release.xcconfig */;
+			baseConfigurationReference = 272307FC04C0F1ACC32BB687 /* Pods-CoolApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
@@ -522,7 +552,9 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/CoolApp/ios/build/Debug-iphonesimulator",
 				);
+				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = CoolApp/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
