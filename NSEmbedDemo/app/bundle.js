@@ -15,10 +15,15 @@ __webpack_require__.r(__webpack_exports__);
 // Added by app-css-loader
 
 
+NSOperationQueue.mainQueue.addOperationWithBlock(function() {
+    (0,_nativescript_angular__WEBPACK_IMPORTED_MODULE_2__.runNativeScriptAngularApp)({
+        appModuleBootstrap: () => (0,_nativescript_angular__WEBPACK_IMPORTED_MODULE_2__.platformNativeScript)().bootstrapModule(_app_app_module__WEBPACK_IMPORTED_MODULE_1__.AppModule),
+    });
+})
 
-(0,_nativescript_angular__WEBPACK_IMPORTED_MODULE_2__.runNativeScriptAngularApp)({
-    appModuleBootstrap: () => (0,_nativescript_angular__WEBPACK_IMPORTED_MODULE_2__.platformNativeScript)().bootstrapModule(_app_app_module__WEBPACK_IMPORTED_MODULE_1__.AppModule),
-});
+
+
+
 
 
 /***/ }),

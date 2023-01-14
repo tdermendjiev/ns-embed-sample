@@ -10,22 +10,31 @@ import NativeScriptEmbedding
 
 @objc class ViewController: UIViewController {
     
-    weak var delegate: NativeScriptEmbedderDelegate?
+    var delegate: EmbedderDelegate?
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        let delegate = EmbedderDelegate()
-        delegate.vc = self
+        self.delegate = EmbedderDelegate()
+        delegate?.vc = self
         NativeScriptEmbedder.sharedInstance().setDelegate(delegate)
     }
     
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
-        let config = Config()
-        config.baseDir = Bundle.main.resourcePath
-        let ns = NativeScript(config: config)
-        ns?.runMainApplication();
+        
     }
+    
+    @IBAction func openNSApp(_ sender: Any) {
+        DispatchQueue.global(qos: .userInitiated).async {
+            let config = Config()
+            config.baseDir = Bundle.main.resourcePath
+            config.metadataPtr = self.delegate?.metadataPtr
+            let ns = NativeScript(config: config)
+            ns?.runMainApplication();
+        }
+        
+    }
+    
 
 }
 

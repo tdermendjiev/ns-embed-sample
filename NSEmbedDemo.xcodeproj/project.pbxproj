@@ -387,6 +387,19 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-framework",
+					"\"NativeScript\"",
+					"-framework",
+					"\"NativeScriptEmbedding\"",
+					"-framework",
+					"\"TNSWidgets\"",
+					"-sectcreate",
+					__DATA,
+					__TNSMetadata,
+					"$(SRCROOT)/metadata-$(CURRENT_ARCH).bin",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = tdermendjiev.NSEmbedDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -419,6 +432,19 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-framework",
+					"\"NativeScript\"",
+					"-framework",
+					"\"NativeScriptEmbedding\"",
+					"-framework",
+					"\"TNSWidgets\"",
+					"-sectcreate",
+					__DATA,
+					__TNSMetadata,
+					"$(SRCROOT)/metadata-$(CURRENT_ARCH).bin",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = tdermendjiev.NSEmbedDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
