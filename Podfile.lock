@@ -1,0 +1,29 @@
+PODS:
+  - NativeScriptEmbedding (8.3.6)
+  - NativeScriptUI (0.1.1)
+
+DEPENDENCIES:
+  - NativeScriptEmbedding (from `https://github.com/NativeScript/ios-v8-pod.git`, branch `worker`)
+  - NativeScriptUI
+
+SPEC REPOS:
+  trunk:
+    - NativeScriptUI
+
+EXTERNAL SOURCES:
+  NativeScriptEmbedding:
+    :branch: worker
+    :git: https://github.com/NativeScript/ios-v8-pod.git
+
+CHECKOUT OPTIONS:
+  NativeScriptEmbedding:
+    :commit: acd2d25fcffd503b0d702b3b03ff87bf694a7c64
+    :git: https://github.com/NativeScript/ios-v8-pod.git
+
+SPEC CHECKSUMS:
+  NativeScriptEmbedding: 02c7b12eda0b058c1aab4d6e6be5c778505388ab
+  NativeScriptUI: f825b88da6cd04f435f18f1eeda67a0c4e5a822c
+
+PODFILE CHECKSUM: 7c4823e79ec8e4018b04f601736ce0ccc6b0f3b0
+
+COCOAPODS: 1.11.3

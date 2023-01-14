@@ -6,14 +6,26 @@
 //
 
 import UIKit
+import NativeScriptEmbedding
 
-class ViewController: UIViewController {
-
+@objc class ViewController: UIViewController {
+    
+    weak var delegate: NativeScriptEmbedderDelegate?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        let delegate = EmbedderDelegate()
+        delegate.vc = self
+        NativeScriptEmbedder.sharedInstance().setDelegate(delegate)
     }
-
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        let config = Config()
+        config.baseDir = Bundle.main.resourcePath
+        let ns = NativeScript(config: config)
+        ns?.runMainApplication();
+    }
 
 }
 

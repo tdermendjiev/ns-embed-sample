@@ -7,15 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1A3B908662EEAF4556BF5999 /* Pods_NSEmbedDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E508EC33FA97DF8444A6F6C /* Pods_NSEmbedDemo.framework */; };
 		2B5035CF2972AAAE00C5095A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B5035CE2972AAAE00C5095A /* AppDelegate.swift */; };
 		2B5035D12972AAAE00C5095A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B5035D02972AAAE00C5095A /* SceneDelegate.swift */; };
 		2B5035D32972AAAE00C5095A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B5035D22972AAAE00C5095A /* ViewController.swift */; };
 		2B5035D62972AAAE00C5095A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2B5035D42972AAAE00C5095A /* Main.storyboard */; };
 		2B5035D82972AAB000C5095A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2B5035D72972AAB000C5095A /* Assets.xcassets */; };
 		2B5035DB2972AAB000C5095A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2B5035D92972AAB000C5095A /* LaunchScreen.storyboard */; };
+		2B5035E32972AACC00C5095A /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = 2B5035E22972AACC00C5095A /* Podfile */; };
+		2B5035E92972ACD700C5095A /* app in Resources */ = {isa = PBXBuildFile; fileRef = 2B5035E82972ACD600C5095A /* app */; };
+		2B5035EC2972AE4900C5095A /* EmbedderDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B5035EB2972AE4900C5095A /* EmbedderDelegate.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0E508EC33FA97DF8444A6F6C /* Pods_NSEmbedDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NSEmbedDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2B5035CB2972AAAE00C5095A /* NSEmbedDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NSEmbedDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2B5035CE2972AAAE00C5095A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2B5035D02972AAAE00C5095A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +29,13 @@
 		2B5035D72972AAB000C5095A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2B5035DA2972AAB000C5095A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2B5035DC2972AAB000C5095A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2B5035E22972AACC00C5095A /* Podfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; };
+		2B5035E42972AB5300C5095A /* NSEmbedDemo-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSEmbedDemo-Bridging-Header.h"; sourceTree = "<group>"; };
+		2B5035E82972ACD600C5095A /* app */ = {isa = PBXFileReference; lastKnownFileType = folder; path = app; sourceTree = "<group>"; };
+		2B5035EA2972AE4900C5095A /* EmbedderDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EmbedderDelegate.h; sourceTree = "<group>"; };
+		2B5035EB2972AE4900C5095A /* EmbedderDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EmbedderDelegate.m; sourceTree = "<group>"; };
+		43BBF5A0FF6543B0055C210B /* Pods-NSEmbedDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NSEmbedDemo.release.xcconfig"; path = "Target Support Files/Pods-NSEmbedDemo/Pods-NSEmbedDemo.release.xcconfig"; sourceTree = "<group>"; };
+		B952E45703DCC9765A46E7E1 /* Pods-NSEmbedDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NSEmbedDemo.debug.xcconfig"; path = "Target Support Files/Pods-NSEmbedDemo/Pods-NSEmbedDemo.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +43,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1A3B908662EEAF4556BF5999 /* Pods_NSEmbedDemo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0DB687710DB5006D4E233D4E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0E508EC33FA97DF8444A6F6C /* Pods_NSEmbedDemo.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		2B5035C22972AAAE00C5095A = {
 			isa = PBXGroup;
 			children = (
+				2B5035E22972AACC00C5095A /* Podfile */,
 				2B5035CD2972AAAE00C5095A /* NSEmbedDemo */,
 				2B5035CC2972AAAE00C5095A /* Products */,
+				BC4F9BF737EC75E9CAA21035 /* Pods */,
+				0DB687710DB5006D4E233D4E /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,15 +80,28 @@
 		2B5035CD2972AAAE00C5095A /* NSEmbedDemo */ = {
 			isa = PBXGroup;
 			children = (
+				2B5035E82972ACD600C5095A /* app */,
 				2B5035CE2972AAAE00C5095A /* AppDelegate.swift */,
 				2B5035D02972AAAE00C5095A /* SceneDelegate.swift */,
 				2B5035D22972AAAE00C5095A /* ViewController.swift */,
+				2B5035EA2972AE4900C5095A /* EmbedderDelegate.h */,
+				2B5035EB2972AE4900C5095A /* EmbedderDelegate.m */,
 				2B5035D42972AAAE00C5095A /* Main.storyboard */,
 				2B5035D72972AAB000C5095A /* Assets.xcassets */,
 				2B5035D92972AAB000C5095A /* LaunchScreen.storyboard */,
 				2B5035DC2972AAB000C5095A /* Info.plist */,
+				2B5035E42972AB5300C5095A /* NSEmbedDemo-Bridging-Header.h */,
 			);
 			path = NSEmbedDemo;
+			sourceTree = "<group>";
+		};
+		BC4F9BF737EC75E9CAA21035 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B952E45703DCC9765A46E7E1 /* Pods-NSEmbedDemo.debug.xcconfig */,
+				43BBF5A0FF6543B0055C210B /* Pods-NSEmbedDemo.release.xcconfig */,
+			);
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +111,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2B5035DF2972AAB000C5095A /* Build configuration list for PBXNativeTarget "NSEmbedDemo" */;
 			buildPhases = (
+				683AE7F6B55B55F20BE8EBA2 /* [CP] Check Pods Manifest.lock */,
 				2B5035C72972AAAE00C5095A /* Sources */,
 				2B5035C82972AAAE00C5095A /* Frameworks */,
 				2B5035C92972AAAE00C5095A /* Resources */,
+				BF7338BC3FDE074618E5C7A6 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -99,6 +138,7 @@
 				TargetAttributes = {
 					2B5035CA2972AAAE00C5095A = {
 						CreatedOnToolsVersion = 14.1;
+						LastSwiftMigration = 1410;
 					};
 				};
 			};
@@ -127,17 +167,62 @@
 			files = (
 				2B5035DB2972AAB000C5095A /* LaunchScreen.storyboard in Resources */,
 				2B5035D82972AAB000C5095A /* Assets.xcassets in Resources */,
+				2B5035E92972ACD700C5095A /* app in Resources */,
+				2B5035E32972AACC00C5095A /* Podfile in Resources */,
 				2B5035D62972AAAE00C5095A /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		683AE7F6B55B55F20BE8EBA2 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-NSEmbedDemo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BF7338BC3FDE074618E5C7A6 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-NSEmbedDemo/Pods-NSEmbedDemo-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-NSEmbedDemo/Pods-NSEmbedDemo-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-NSEmbedDemo/Pods-NSEmbedDemo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		2B5035C72972AAAE00C5095A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2B5035EC2972AE4900C5095A /* EmbedderDelegate.m in Sources */,
 				2B5035D32972AAAE00C5095A /* ViewController.swift in Sources */,
 				2B5035CF2972AAAE00C5095A /* AppDelegate.swift in Sources */,
 				2B5035D12972AAAE00C5095A /* SceneDelegate.swift in Sources */,
@@ -282,9 +367,11 @@
 		};
 		2B5035E02972AAB000C5095A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B952E45703DCC9765A46E7E1 /* Pods-NSEmbedDemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = H6KAAZFWNY;
@@ -303,6 +390,8 @@
 				PRODUCT_BUNDLE_IDENTIFIER = tdermendjiev.NSEmbedDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "NSEmbedDemo/NSEmbedDemo-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -310,9 +399,11 @@
 		};
 		2B5035E12972AAB000C5095A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 43BBF5A0FF6543B0055C210B /* Pods-NSEmbedDemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = H6KAAZFWNY;
@@ -331,6 +422,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = tdermendjiev.NSEmbedDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "NSEmbedDemo/NSEmbedDemo-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
