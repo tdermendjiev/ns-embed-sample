@@ -27,6 +27,7 @@ import NativeScriptEmbedding
     @IBAction func openNSApp(_ sender: Any) {
         DispatchQueue.global(qos: .userInitiated).async {
             let config = Config()
+            config.logToSystemConsole = true
             config.baseDir = Bundle.main.resourcePath
             config.metadataPtr = self.delegate?.metadataPtr
             let ns = NativeScript(config: config)
