@@ -29,7 +29,7 @@
 		2B5035D72972AAB000C5095A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2B5035DA2972AAB000C5095A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2B5035DC2972AAB000C5095A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		2B5035E22972AACC00C5095A /* Podfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; };
+		2B5035E22972AACC00C5095A /* Podfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		2B5035E42972AB5300C5095A /* NSEmbedDemo-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSEmbedDemo-Bridging-Header.h"; sourceTree = "<group>"; };
 		2B5035E82972ACD600C5095A /* app */ = {isa = PBXFileReference; lastKnownFileType = folder; path = app; sourceTree = "<group>"; };
 		2B5035EA2972AE4900C5095A /* EmbedderDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EmbedderDelegate.h; sourceTree = "<group>"; };
